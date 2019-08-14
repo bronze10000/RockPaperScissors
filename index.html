@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:900&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>JDK's Rock, Paper, Scissors game!</h1>
+    </header>
+
+    <div class="main-board">
+        <div class="robot-info">
+            <!-- SCOREBOARD -->
+            <div class="number" id="robot-score">0</div>
+            <div class='scores'>
+                <!-- COMPUTER'S SCORE -->
+                <span class="comp_score">Robot</span> 
+            </div>
+            <div class="imgs">
+                <!-- COMPUTER'S CHOICE IMG -->
+                <div id="robot-placeholder" class="placeholder">
+                    <img src="./images/robot-placeholder.png" alt="" id="robot" class="imgs">
+                </div>
+            </div>
+        </div>
+        
+        <div class="human-info">
+            <div class="number" id="human-score">0</div>
+            <div class='scores'>
+                <!-- YOUR SCORE -->
+                <span class="human_score">Human</span>        
+            </div>
+            <div class="imgs">
+                <!-- YOUR CHOICE IMG -->
+                <div id="young-boy-placeholder" class="placeholder">
+                    <img src="./images/young-boy-placeholder.png" alt="" id="human" class="imgs">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESULT STMT! -->
+    <div id="result">
+        <p id="text"></p>
+    </div>
+    <!-- YOUR SELECTION CHOICES BUTTONS -->
+    <div class="human_selection">
+        <span id="rock">
+            <image src="./images/human-rock.png" class="hand"></image>
+        </span>
+        <span id="paper">
+            <image src="./images/human-paper.png" class="hand"></image>
+        </span>
+        <span id="scissors">
+            <image src="./images/human-scissors.png" class="hand"></image>
+        </span>
+    </div>
+
+    <div class="directions">
+        Click the above icons to make your move!
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

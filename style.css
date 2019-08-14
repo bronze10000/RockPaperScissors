@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: orbitron;
+    font-size: 40px;
+    color: #586674;
+    font-weight: 900;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+.human_selection {
+    margin: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.human_selection span {
+    margin: 0 20px 0 20px;
+    border-radius: 50%;
+    border: 3px solid white;
+    padding: 10px;
+}
+.human_selection span:hover {
+    background-color: gainsboro;
+}
+.scores {
+    text-align: center;
+
+}
+
+.placeholder {
+    height: 300px;
+    /* height: 100%; */
+}
+
+.imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.hand {
+    height: 50px;
+}
+.comp_score {
+    font-family: 'Notable', sans-serif;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+}
+.human_score {
+    font-family: 'Pacifico', cursive;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    line-height: 45px;
+}
+.main-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+body {
+    /* background-color: dimgray; */
+    background-image: linear-gradient(to right, #404040 , ghostwhite);
+    
+}
+.number {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 0 0 20px;
+}
+
+.directions {
+    text-align: center;
+    font-size: 25px;
+    color: whitesmoke;
+}
+
+/* #result {
+    font-size: 100px;
+    font-weight: 900;
+    color: aquamarine;
+    text-align: center;
+    z-index: 10;
+} */
+
+#result {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* font-size: 50px; */
+    /* color: white; */
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    font-size: 100px;
+    font-weight: 900;
+    color: aquamarine;
+    text-align: center;
+}
